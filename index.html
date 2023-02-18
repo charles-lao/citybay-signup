@@ -4,10 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up form</title>
+    <title>CITYBAY - Sign up</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    
+
+    <container>
+        <div id="left-section">
+            <div>
+                <img src="../images/logo.png" height="120" width="120">
+                <h1>CITYBAY</h1>
+            </div>
+        </div>
+
+        <div id="right-section">
+            <div id="text-section">
+                <p>This is not a real online service! You know you need 
+                    something like this in your life to help you realize 
+                    your deepest dreams.</br>Sign up <em>now</em> to get started.
+                </p>
+
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div id="form-section">
+                <p>Let's do this!</p>
+
+                <form action="" id="signup-form" method="POST"> 
+
+                    <div id="left-form">
+                        <div class="form-row">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name" />
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" />
+                        </div>
+
+                        <div class="form-row">
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" id="pwd" name="pwd" />
+                        </div>
+                    </div>
+
+                    <div id="right-form">
+                        <div class="form-row">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" />
+                        </div>
+                        <div class="form-row">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" name="phone-number" />
+                        </div>
+                        <div class="form-row">
+                            <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-pwd" name="confirm-pwd" />
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div id="submit-section">
+                <button type="submit" form="signup-form">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </container>
 </body>
 </html>
