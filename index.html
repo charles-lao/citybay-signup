@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CITYBAY - Sign up</title>
     <link rel="stylesheet" href="../styles/style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -37,24 +37,25 @@
                     <div id="left-form">
                         <div class="form-row">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name" required />
+                            <input type="text" id="first-name" name="first-name" placeholder="John" required />
                         </div>
 
                         <div class="form-row">
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email" required />
+                            <input type="email" id="email" name="email" placeholder="example@example.com" required />
                         </div>
 
                         <div class="form-row">
                             <label for="pwd">PASSWORD</label>
-                            <input type="password" class="error pwd" id="pwd" name="pwd" required />
+                            <input type="password" class="error pwd" id="pwd" name="pwd" required minlength="4" />
+                            <p id="pwd-message">*Password fields do not match</p>
                         </div>
                     </div>
 
                     <div id="right-form">
                         <div class="form-row">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name" required />
+                            <input type="text" id="last-name" name="last-name" placeholder="Smith" required />
                         </div>
                         <div class="form-row">
                             <label for="phone-number">PHONE NUMBER</label>
@@ -62,7 +63,7 @@
                         </div>
                         <div class="form-row">
                             <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                            <input type="password" class="error pwd" id="confirm-pwd" name="confirm-pwd" required />
+                            <input type="password" class="error pwd" id="confirm-pwd" name="confirm-pwd" required minlength="4"/>
                         </div>
                     </div>
                 </form>
