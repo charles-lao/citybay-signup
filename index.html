@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CITYBAY - Sign up</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -21,45 +22,47 @@
             <div id="text-section">
                 <p>This is not a real online service! You know you need 
                     something like this in your life to help you realize 
-                    your deepest dreams.</br>Sign up <em>now</em> to get started.
+                    your deepest dreams.
                 </p>
+
+                <p>Sign up <em>now</em> to get started.</p>
 
                 <p>You <em>know</em> you want to.</p>
             </div>
             <div id="form-section">
                 <p>Let's do this!</p>
 
-                <form action="" id="signup-form" method="POST"> 
+                <form action="index.html" id="signup-form" method="POST"> 
 
                     <div id="left-form">
                         <div class="form-row">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name" />
+                            <input type="text" id="first-name" name="first-name" required />
                         </div>
 
                         <div class="form-row">
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email" />
+                            <input type="email" id="email" name="email" required />
                         </div>
 
                         <div class="form-row">
                             <label for="pwd">PASSWORD</label>
-                            <input type="password" id="pwd" name="pwd" />
+                            <input type="password" class="error pwd" id="pwd" name="pwd" required />
                         </div>
                     </div>
 
                     <div id="right-form">
                         <div class="form-row">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name" />
+                            <input type="text" id="last-name" name="last-name" required />
                         </div>
                         <div class="form-row">
                             <label for="phone-number">PHONE NUMBER</label>
-                            <input type="tel" id="phone-number" name="phone-number" />
+                            <input type="tel" id="phone-number" name="phone-number" required />
                         </div>
                         <div class="form-row">
                             <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-pwd" name="confirm-pwd" />
+                            <input type="password" class="error pwd" id="confirm-pwd" name="confirm-pwd" required />
                         </div>
                     </div>
                 </form>
